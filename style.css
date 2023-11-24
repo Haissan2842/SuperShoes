@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.intersection {
+    text-align: center;
+    height: 100px;
+}
+
 .container {
     max-width: 80%;
     margin: 0 auto;
@@ -29,3 +34,46 @@ footer {
     flex-direction: column;
     
 }
+
+.section1 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Texte-section-1 Image-section-1";
+  }
+  
+  .Texte-section-1 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      "Texte-section-1-bis Texte-section-1-bis Texte-section-1-bis"
+      ". . .";
+    grid-area: Texte-section-1;
+  }
+  
+  .Texte-section-1-bis { grid-area: Texte-section-1-bis; }
+  
+  .Image-section-1 { grid-area: Image-section-1; }
+
+
+  .section3 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Carte Forms";
+  }
+  
+  .Carte { grid-area: Carte; }
+  
+  .Forms { grid-area: Forms; }
+  
+  
